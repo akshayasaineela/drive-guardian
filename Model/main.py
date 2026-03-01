@@ -6,7 +6,7 @@ import shap
 
 app = FastAPI()
 
-model = joblib.load("driving_risk_model.pkl")
+model = joblib.load("Model/driving_risk_model.pkl")
 explainer = shap.TreeExplainer(model)  # faster for tree models
 
 
